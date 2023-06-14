@@ -1,0 +1,302 @@
+/*Adrian Koornneef, Amanda Sawyer, Hillary Elliott*/
+/*April 2023*/
+/*w3schools was used as a starting point for all basic functionality of the website.*/
+
+body{
+    background-image: url("Images/NasaHudson.jpg");
+    background-size: 1750px 1500px;
+    background-color: rgb(20, 19, 29);
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+}
+
+/***********************Fonts and Text**********************/
+.h1_header {
+    font-size: 48px; 
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    text-shadow: 2px 2px black;
+    flex: 1; /* From here below in the element, problem solved with ChatGPT to ensure header titles scale with header size */
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    max-width: 100%; 
+}
+
+
+.h2_header {
+    font-size: 32px; 
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    text-shadow: 2px 2px black;
+    flex: 1; 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    max-width: 100%; 
+}
+
+h1 {
+    font-size: 48px; 
+    color:  rgb(31, 83, 22);
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+
+h2 {
+    font-size: 32px; 
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+h3 {
+    font-size: 18px; 
+    color: white;
+    text-align: left;
+    font-weight: 750;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+
+.p1 {
+    color: white;
+    text-align: justify;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+}
+
+.p2 {
+    color: white;
+    text-align: justify;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/*********************** Bullet Points **********************/
+ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: justify;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+  }
+  
+  li {
+    margin: 5px 0 0 2em;
+    padding: 0;
+  }
+
+  li.a {
+    margin: 5px 0 0 4em;
+    padding: 0;
+  }
+/***********************Main div containers **********************/
+
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px; /* Adjust the 15px value to your desired spacing */
+    padding-top: 20px; /* Add a padding top equivalent to the height of the header to create a gap between the header and the div */
+}
+
+
+div.box {
+    width: 80%;
+    max-width: 900px;
+    background-color: rgba(51, 48, 48, .95);
+    border-radius: 15px;
+    border: 1.5mm ridge rgba(29, 28, 27, 0.6);
+    padding: 20px;
+}
+
+div.titles {
+	margin: 5px; /*General spacing formatting*/
+	margin-top: 100px;
+}
+
+div.text {
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div.spaced_text {
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 15px;
+    margin-top: 60px;
+}
+
+
+
+    /***********************NavBar**********************/
+/* https://www.w3schools.com/howto/howto_js_tabs.asp */
+
+
+ #navbar {
+	background-color: rgb(17, 46, 12); 
+	overflow: hidden;  
+	border: 1px solid black; 
+	position: fixed;
+	width: 100%;
+	top: -50px;
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+	transition: top 0.3s;
+    z-index: 2;
+}
+/*styling the links within the nav bar*/
+#navbar a{
+	float: left; 
+	color: white; 
+	text-align: center; 
+	padding: 16px; 
+	text-decoration: none;  
+	font-weight: bold; 
+	font-size: 17px; 
+    font-family: 'Avenir Next LT Pro', sans-serif;
+	text-shadow: 2px 2px black
+} 
+/* Change the color of links on hover */
+ #navbar a:hover {
+  background-color: #7FA650; /*hover colour matches accent colour formatting of page*/
+  color: white; 
+  font-family: 'Syne Mono', monospace; /*changes font style hovering */
+ } 
+
+
+
+/***********************Links (not Navbar) **********************/
+div .link_holder {
+    text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div .link_holder_left {
+    text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+div .on_page_links a {
+  display: inline-block; /* to make the entire div clickable */
+  text-align: center;
+  border-radius: 25px; 
+  padding: 15px; 
+  border: 2px solid black; 
+  width: 100px;
+  background-color: rgb(17, 46, 12); 
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
+  margin-top: 25px;
+  text-shadow: .5px 1px black;
+}
+
+
+div .on_page_links a:hover {
+  color: #e3b719;
+  background-color: rgb(20, 19, 29); /* to highlight the link when hovered over */
+}
+
+div .on_page_linkz a {
+  display: inline-block; /* to make the entire div clickable */
+  text-align: center;
+  border-radius: 25px; 
+  padding: 15px; 
+  border: 2px solid black; 
+  width: 150px;
+  background-color: rgb(17, 46, 12); 
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
+  margin-top: 25px;
+  text-shadow: .5px 1px black;
+}
+
+div .on_page_linkz a:hover {
+  color: #e3b719;
+  background-color: rgb(20, 19, 29); /* to highlight the link when hovered over */
+}
+
+
+ /********************** HEADER **********************/
+
+   /* Option 1: This header floats centered and not in the corners */
+header.fix_to_top_header {
+	background-color: #777; /*For browsers that do not support gradients */
+	background-image: linear-gradient(to bottom right, rgba(94, 94, 94, 0),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
+	padding: 15px; /*space formatting */ 
+	border-radius: 5px; /*border shaping of header*/ 
+	border: 1px solid black; /*basic formatting*/ 
+	text-align: center; /*center-align the header text*/ 
+	border: 1.5mm ridge rgba(20, 20, 19, 0.9);
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 20vh;
+    margin-bottom: 10px;
+    min-height: 100px;
+    display: flex; /* ChatGPT sudgestion to fix header scaling issue */
+    flex-direction: column; /* ChatGPT sudgestion to fix header scaling issue */
+    align-items: center; /* ChatGPT sudgestion to fix header scaling issue */
+  }
+
+
+
+  /********************** Photos **********************/
+div.profile_photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+img.profile_photos {
+	border-radius: 100px; 
+	border: 2px solid black; 
+	max-width: 100%;
+	margin-top: 25px;
+}
+
+div.port_photo_holder{
+    text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+    margin-top: 25px;
+}
+
+div.port_photo_holder_left{
+    text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+    margin-top: 25px;
+}
+
+img.port_photos {
+	border-radius: 25px; 
+	border: 2px solid black; 
+	max-width: 100%;
+	margin-top: 10px;
+}
+
