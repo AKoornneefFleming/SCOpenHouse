@@ -9,7 +9,7 @@
     <link href="https://fonts.cdnfonts.com/css/avenir-next-lt-pro" rel="stylesheet">
     <script src = "Web8.js"></script>
 </head>
-<body>
+<body onload="showSlides(1)"> 
 <!-- NAVBAR -->
 <!-- Inspired by W3 schools -->
 <div id = "navbar">  
@@ -84,6 +84,56 @@
             tracking. Explore the rest of this website to learn more about the Web8 team and the process to fulfill our proposal.
             </p>
         </div>
+
+        <div class = "titles">
+            <h2>Testing Photo Gallery</h2>
+        </div> 
+        <div class = "text">
+            <p class = "p1">To fulfill our team’s proposal, several technologies were investigated and tested to create solutions for Fleming College Frost Campus. 
+            As navigation solutions were our original focus, most of the solutions are specific to that goal; ArcGIS Experience Builder, ArcGIS StoryMaps, and various JavaScript 
+           solutions were used to create navigation applications. ArcGIS Field Maps was used to meet all the clients’ goals, navigation, data collection, and location tracking. 
+            After investigation these technologies, Experience Builder was selected as our final solution for navigation, and Field Maps for data collection and location 
+            tracking. Explore the rest of this website to learn more about the Web8 team and the process to fulfill our proposal.
+            </p>
+        </div>
+        
+        <!-- PHOTO GALLERY SECTION -->
+        <!-- Heavily leverages w3 code sample, with modifications -AK  -->
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow  -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 3</div> -->
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos" src="Images/HE_LinkedIn.jpg" style="width:250px">
+                    </div>
+                <div class="gallery_text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 3</div> -->
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos" src="Images/FrostCampus650.png" style="width:650px">
+                    </div>
+                <div class="gallery_text">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                    <div class = "port_photo_holder">
+                        <img class ="port_photos" src="Images/AKprofile182x203.jpg" style="width:203px">
+                    </div>
+                <div class="gallery_text">Caption Three</div>
+                </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <!-- Shawn doesn't like <br> in website, but this seems like an appopriate use case  -->
+        <br> 
+        <div style="text-align:center">
+            <span class="gallery_dot" onclick="currentSlide(1)"></span> 
+            <span class="gallery_dot" onclick="currentSlide(2)"></span> 
+            <span class="gallery_dot" onclick="currentSlide(3)"></span> 
+        </div>
+                  
         
         <!-- Final POCs -->
         <div class = "titles">
