@@ -1,11 +1,11 @@
-/*Adrian Koornneef, Amanda Sawyer, Hillary Elliott*/
-/*April 2023*/
+/*Adrian Koornneef CSS Design, Adrian Koornneef, Amanda Sawyer, Hillary Elliott website development*/
+/*July 14, 2023*/
 /*w3schools was used as a starting point for all basic functionality of the website.*/
 
 body{
-    background-image: url("Images/NasaHudson.jpg");
-    background-size: 1750px 1500px;
-    background-color: rgb(20, 19, 29);
+    background-image: url("Images/SAWC_AGOL_HomeCover_1750_px.jpg");
+    background-size: 1750px 1075px;
+    background-color: #bfb9af;
     background-position: 50% 45%;
     background-repeat: no-repeat;
 }
@@ -13,7 +13,7 @@ body{
 /***********************Fonts and Text**********************/
 .h1_header {
     font-size: 48px; 
-    color: white;
+    color: #e8e5dd;
     text-align: center;
     font-weight: 900;
     font-family: 'Avenir Next LT Pro', sans-serif;
@@ -28,7 +28,7 @@ body{
 
 .h2_header {
     font-size: 32px; 
-    color: white;
+    color: #e8e5dd;
     text-align: center;
     font-weight: 900;
     font-family: 'Avenir Next LT Pro', sans-serif;
@@ -42,7 +42,7 @@ body{
 
 h1 {
     font-size: 48px; 
-    color:  rgb(31, 83, 22);
+    color:  #b92031;
     text-align: center;
     font-weight: 900;
     font-family: 'Avenir Next LT Pro', sans-serif;
@@ -52,7 +52,7 @@ h1 {
 
 h2 {
     font-size: 32px; 
-    color: white;
+    color: #e8e5dd;
     text-align: center;
     font-weight: 900;
     font-family: 'Avenir Next LT Pro', sans-serif;
@@ -65,7 +65,7 @@ h3 {
     text-align: left;
     font-weight: 750;
     font-family: 'Avenir Next LT Pro', sans-serif;
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
 }
 
 
@@ -73,6 +73,7 @@ h3 {
     color: white;
     text-align: justify;
     font-family: 'Avenir Next LT Pro', sans-serif;
+    text-shadow: 1px 1px rgb(72, 72, 72);
 }
 
 .p2 {
@@ -117,7 +118,7 @@ div.container {
 div.box {
     width: 80%;
     max-width: 900px;
-    background-color: rgba(51, 48, 48, .95);
+    background-color: rgba(164,156,135,.98);
     border-radius: 15px;
     border: 1.5mm ridge rgba(29, 28, 27, 0.6);
     padding: 20px;
@@ -148,7 +149,7 @@ div.spaced_text {
 
 
  #navbar {
-	background-color: rgb(17, 46, 12); 
+	background-color: #b92031; 
 	overflow: hidden;  
 	border: 1px solid black; 
 	position: fixed;
@@ -163,7 +164,7 @@ div.spaced_text {
 /*styling the links within the nav bar*/
 #navbar a{
 	float: left; 
-	color: white; 
+	color: #e8e5dd; 
 	text-align: center; 
 	padding: 16px; 
 	text-decoration: none;  
@@ -174,9 +175,8 @@ div.spaced_text {
 } 
 /* Change the color of links on hover */
  #navbar a:hover {
-  background-color: #7FA650; /*hover colour matches accent colour formatting of page*/
-  color: white; 
-  font-family: 'Syne Mono', monospace; /*changes font style hovering */
+  background-color:rgb(78, 2, 2); /*hover colour matches accent colour formatting of page*/
+  color: rgb(244, 213, 78); 
  } 
 
 
@@ -202,7 +202,7 @@ div .on_page_links a {
   padding: 15px; 
   border: 2px solid black; 
   width: 100px;
-  background-color: rgb(17, 46, 12); 
+  background-color: #b92031; 
   font-family: 'Avenir Next LT Pro', sans-serif;
   color: white; 
   text-decoration: none; 
@@ -224,7 +224,7 @@ div .on_page_linkz a {
   padding: 15px; 
   border: 2px solid black; 
   width: 150px;
-  background-color: rgb(17, 46, 12); 
+  background-color: #b92031; 
   font-family: 'Avenir Next LT Pro', sans-serif;
   color: white; 
   text-decoration: none; 
@@ -234,17 +234,16 @@ div .on_page_linkz a {
 }
 
 div .on_page_linkz a:hover {
-  color: #e3b719;
-  background-color: rgb(20, 19, 29); /* to highlight the link when hovered over */
+  color: rgb(244, 213, 78); 
+  background-color: rgb(78, 2, 2); /* to highlight the link when hovered over */
 }
-
 
  /********************** HEADER **********************/
 
    /* Option 1: This header floats centered and not in the corners */
 header.fix_to_top_header {
-	background-color: #777; /*For browsers that do not support gradients */
-	background-image: linear-gradient(to bottom right, rgba(94, 94, 94, 0),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
+	/* background-color: #a49c87; For browsers that do not support gradients */
+	background-image: linear-gradient(to bottom right, rgba(164,156,135,0),rgb(164,156,135, 1)); /*w3schools - css gradients*/
 	padding: 15px; /*space formatting */ 
 	border-radius: 5px; /*border shaping of header*/ 
 	border: 1px solid black; /*basic formatting*/ 
