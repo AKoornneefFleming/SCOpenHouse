@@ -13,7 +13,7 @@ body{
 /***********************Fonts and Text**********************/
 .h1_header {
     font-size: 48px; 
-    color: #e8e5dd;
+    color: rgb(234, 216, 138);
     text-align: center;
     font-weight: 900;
     font-family: 'Avenir Next LT Pro', sans-serif;
@@ -28,7 +28,7 @@ body{
 
 .h2_header {
     font-size: 32px; 
-    color: #e8e5dd;
+    color: rgb(234, 216, 138);
     text-align: center;
     font-weight: 900;
     font-family: 'Avenir Next LT Pro', sans-serif;
@@ -120,7 +120,8 @@ div.box {
     max-width: 900px;
     background-color: rgba(164,156,135,.98);
     border-radius: 15px;
-    border: 1.5mm ridge rgba(29, 28, 27, 0.6);
+    border: 2px solid black;
+    /* border: 1.5mm ridge rgba(29, 28, 27, 0.6); */
     padding: 20px;
 }
 
@@ -242,13 +243,14 @@ div .on_page_linkz a:hover {
 
    /* Option 1: This header floats centered and not in the corners */
 header.fix_to_top_header {
-	/* background-color: #a49c87; For browsers that do not support gradients */
-	background-image: linear-gradient(to bottom right, rgba(164,156,135,0),rgb(164,156,135, 1)); /*w3schools - css gradients*/
+	background-color: #b92031; 
+	/* background-image: linear-gradient(to bottom right, rgba(164,156,135,0),rgb(164,156,135, 1)); w3schools - css gradients */
 	padding: 15px; /*space formatting */ 
 	border-radius: 5px; /*border shaping of header*/ 
 	border: 1px solid black; /*basic formatting*/ 
 	text-align: center; /*center-align the header text*/ 
-	border: 1.5mm ridge rgba(20, 20, 19, 0.9);
+	border: 2px solid black;
+    /* border: 1.5mm ridge rgba(20, 20, 19, 0.9); */ /*Looks good in develop but uploaded having issues, turned off for now */
     top: 0;
     right: 0;
     left: 0;
@@ -258,6 +260,7 @@ header.fix_to_top_header {
     display: flex; /* ChatGPT sudgestion to fix header scaling issue */
     flex-direction: column; /* ChatGPT sudgestion to fix header scaling issue */
     align-items: center; /* ChatGPT sudgestion to fix header scaling issue */
+    max-height: 50px;
   }
 
 
