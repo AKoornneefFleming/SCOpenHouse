@@ -31,142 +31,91 @@
     <h2 class = "h2_header">Open House Presentation</h2>  
 </header>
 
-<!-- Body of the page starts here  -->
+<!-- ########### Body of the page starts here ###########-->
 <div class = "container">
     <!-- Body of the page starts here  -->
     <div class = "box">
         
-        <!-- This is where the first paragraph starts -->
+        <!-- ########### PAGE INTRODUCTION ################ -->
         <div class = "titles">
-            <h1>Project Introduction</h1>
-            <h2>Southern African Wildlife College Campus Basemap, Navigation, Asset Management and StoryMaps</h2>
+            <h1>Data Collection</h1>
+            <!-- <h2>Subtitle Here if applicable</h2> -->
          </div>
 
-            <!-- Pic of the school -->
+            <!-- Title Picture -->
+            <div class = "port_photo_holder_no_top_margin">
+                <img class = "port_photos_no_outline" src="./Images/DataCollection_3.png" alt="A phon screnshot with a map and various points" style="width:200px; height:auto">
+            </div> 
+
+        <!-- ########## OVERVIEW ################ -->
+        <div class = "titles">
+            <h2>Overview</h2>
+        </div> 
+
+            <div class = "text">
+                <h3>Priority: </h3>
+                <p class = "p1"> Required </p>
+                <h3>Objectives: </h3>
+                <p class = "p1"> Support Operations and EM, Promote SAWC using GIS, Campus Navigation, Online/Offline Data Accessibility </p>
+                <h3>Academic Requirements: </h3> 
+                <p class = "p1"> Data acquisition, database design</p>
+                <h3>Additional Details: </h3> 
+                <p class = "p1"> An efficient strategy for on-site data collection was imperative to the success of 
+                    the collaborative project, as every deliverable is dependent on the availability of quality spatial data. </p>
+            </div>
+
+        <!-- ########## METHODOLOGY ################ -->
+        <div class = "titles">
+            <h2>Methodology</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">To maximize time and effort on location, the team created feature classes for data collection, 
+                    hosted as ArcGIS web maps (web map) in AGOL and accessed through ArcGIS Field Maps (Field Maps). 
+                    Domains, Field Map surveys, and offline map extents were created to help streamline collection while in the field, 
+                    even during the frequent power outages and loss of network service. In some cases, existing spatial data provided 
+                    by the client while Safari Consulting was on-site was also added to the web map, for in-field verification (e.g. fire extinguishers, buildings and rooms).
+                </p>
+            </div>
+
+            <!-- Schema Picture -->
             <div class = "port_photo_holder">
-                <img class = "port_photos" src="./Images/SAWC_Rhino_550px.jpg" alt="A rhino walking across a mud patch with birds on its back" style="width:550px; height:auto">
-                <!-- image source: https://wildlifecollege.org.za/  -->
+                <img class = "port_photos_no_outline" src="./Images/DataCollection_Schema1.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:700px; height:auto">
+            </div> 
+
+            <div class = "text">
+                <p class = "p3">ArcGIS Pro Feature Class attribute table, domain and fields table.</p>
+            </div>
+
+            <div class = "text">
+                <p class = "p1">A second component to data acquisitions was the organization and review 
+                    of the existing spatial data, which was provided by the client upon our on-site arrival. Data existed in a  myriad of locations and formats.
+                    The scope and types of available raw data needed to be interpreted and understood before it could be cleaned and incorporated into the rest of the project deliverables.
+                </p>
+            </div>
+
+
+
+        <!-- ########## RESULTS ################ -->
+        <div class = "titles">
+            <h2>Results</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">The use of offline web maps in Field Maps, with the generic data collection layers and applicable provided spatial data 
+                    included, helped the team collect new records and verify existing records across the 83-acre campus 
+                    Some in-field collection took place with members of the SAWC staff to locate and contextualize points of interest, and to 
+                    better understand the use-case for data. Sufficient spatial data was gathered from the client and cleaned to support the remaining deliverables.
+                </p>
+            </div>
+
+            <!-- Data Collection Results Photo -->
+            <div class = "port_photo_holder">
+                <img class = "port_photos_no_outline" src="./Images/dataCollection_combined1.png" alt="A Phone and a map showing various collected waypoints" style="width:600px; height:auto">
             </div> 
             <div class = "text">
-                <p class = "p3">Image from SAWC home page.</p>
+                <p class = "p3">Various points of data collected across the campus.</p>
             </div>
-
-        <!-- Client Background Section -->
-        <div class = "titles">
-            <h2>Client Background</h2>
-        </div> 
-
-            <!-- Client Background Paragraph 1 -->
-            <div class = "text">
-                <p class = "p1">Southern African Wildlife College (SAWC) has been proudly operating for 26 years with the aim of meeting training needs for natural resource management.  
-                    Situated within Kruger National Park, SAWC offers a variety of educational services on the topics of conservation, 
-                    wildlife management, anti-poaching, and community development. The school also offers supporting services that are integral 
-                    to the management of the park system itself (SAWC Annual Report, 2021).</p>
-            </div>
-
-            <!-- Client Background Paragraph 2 -->
-            <div class = "text">       
-                <p class = "p1"> SAWC provides training on wildlife management, nature-based tourism, community-based natural resource management, 
-                    responsible resource use, anti-poaching skills, and other environmental subjects (SAWC Annual Report, 2021). They have trained over 20,000 students, 
-                    including more than 14,000 field rangers, and 1,200 natural resource managers from over 
-                    56 countries and 127 wildlife areas (SAWC website).</p>
-            </div>
-
-            <!-- Client Background Paragraph 3 -->
-            <div class = "text">       
-                <p class = "p1"> The college has experimented with and successfully integrated geographic information systems in several projects, 
-                    incorporating the technology into their Applied Technology and Learning Unit. They are interested 
-                    in further advancing these capabilities with an organized database and basemap, as well as 
-                    establishing enterprise technology solutions to support various departments in the organization, 
-                    such as Marketing and Operations</p>
-            </div>
-
-            <!-- Logo -->
-            <div class = "port_photo_holder">
-                <img class = "port_photos" src="./Images/SAWC_logo_300.png" alt="Southern African Wildlife College logo" style="width:300px; height:auto">
-                <!-- image source: https://wildlifecollege.org.za/  -->
-            </div>
-
-            <!-- Link to client homepage--> 
-            <div class = "link_holder">
-                <div class = "on_page_linkz">
-                    <a href = "https://wildlifecollege.org.za/">SAWC Website</a>
-                </div>
-            </div>
-            
-        <!-- Problem Statement Section -->
-        <div class = "titles">
-            <h2>Problem Statement</h2>
-        </div> 
-
-            <div class = "text">
-                <h3>Ideal: </h3>
-                <p class = "p1"> A cartographically pleasing basemap and application solutions that support on and 
-                    off campus navigation, life safety, asset management, marketing material and relevant research projects. 
-                    These should be built upon a well-organized data structure. These solutions should be reliable enough to adapt 
-                    to both online and offline scenarios where applicable, and straightforward enough to be maintained and taught by 
-                    campus staff in support of the existing longitudinal studies. 
-                </p>
-                <h3>Reality: </h3>
-                <p class = "p1"> The only existing basemaps for the campus are rudimentary and lacking detail. Current GIS datasets require further 
-                    development and organization. There are no significant digital navigation solutions available, 
-                    with or without resilience to load shedding.
-                </p>
-                <h3>Consequences: </h3> 
-                <p class = "p1"> It is difficult for visitors to navigate around the campus, and they often get lost. 
-                    Additional GIS work is difficult to develop without sufficient basemap or operational layers, and services are lost during load shedding. 
-                    There is significant risk of information loss regarding critical infrastructure, 
-                    and it would be difficult to identify or communicate the location of life safety equipment or assets during an emergency. 
-                </p>
-                <h3>Proposal: </h3>
-                <p class = "p1"> Collect and organize sufficient data to support the development of a basemap and operational layers, 
-                    that can be integrated into online and offline solutions that meet the client’s use-cases. 
-                </p>
-            </div>
-
-        <!-- Project Summary -->
-        <div class = "titles">
-            <h2>Project Summary</h2>
-        </div> 
-
-            <div class = "text">
-                <p class = "p1">Safari Consulting, worked with Southern African Wildlife College to learn about and fulfill their 
-                    current objectives, by leveraging GIS technologies to deliver quality geospatial solutions. 
-                    The seven deliverable solutions include data acquisition, file geodatabase development, custom basemaps, 
-                    ArcGIS StoryMaps templates, navigation solutions, asset management solutions, and GIS instruction packages. 
-                    These deliverables were built over a six-week period, with a one-week phase of data acquisition and a 
-                    five-week phase of project development. These solutions will ultimately help the college in a variety of meaningful 
-                    ways including (but not limited to) data organization and management, visualization of the 
-                    college and their research areas, asset management, and establishing a foundation for future their GIS projects. 
-                </p>
-            </div>
-
-        
-        <!-- PHOTO GALLERY SECTION -->
-        <!-- Heavily leverages w3 code sample, with modifications -AK  -->
-        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow  -->
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                    <div class = "port_photo_holder">
-                        <img class = "port_photos" src="Images/TeamPhoto1_800.jpg" alt="Smiling Safari Consulting team on a game drive" style="width:800px">
-                    </div>
-                <div class="gallery_text">Safari Consulting on a game drive</div>
-            </div>
-            <div class="mySlides fade">
-                    <div class = "port_photo_holder">
-                        <img class = "port_photos" src="Images/TeamPhoto2_800.jpg" alt="Safari Consulting with our project liasion" style="width:800px">
-                    </div>
-                <div class="gallery_text">Safari Consulting with our SAWC project liasion</div>
-                </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-        <br> 
-        <div style="text-align:center">
-            <span class="gallery_dot" onclick="currentSlide(1)"></span> 
-            <span class="gallery_dot" onclick="currentSlide(2)"></span> 
-        </div>
                   
     </div>
 </div>

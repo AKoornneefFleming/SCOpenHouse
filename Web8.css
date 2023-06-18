@@ -68,7 +68,7 @@ h3 {
     text-shadow: 1px 1px black;
 }
 
-
+/* primary text */
 .p1 {
     color: white;
     text-align: justify;
@@ -76,6 +76,7 @@ h3 {
     text-shadow: 1px 1px rgb(72, 72, 72);
 }
 
+/* bold text */
 .p2 {
     color: white;
     text-align: justify;
@@ -91,6 +92,7 @@ h3 {
   font-family: 'Avenir Next LT Pro', sans-serif;
   font-style: italic;
   text-shadow: 1px 1px rgb(72, 72, 72);
+  font-size: 11px
 }
 
 /* upsized text middle*/
@@ -184,7 +186,6 @@ div.spaced_text {
 
 
 
-
     /***********************NavBar**********************/
 /* https://www.w3schools.com/howto/howto_js_tabs.asp */
 
@@ -235,7 +236,6 @@ div .link_holder_left {
 	padding-right: 15px;
 }
 
-
 div .on_page_links a {
   display: inline-block; /* to make the entire div clickable */
   text-align: center;
@@ -251,7 +251,6 @@ div .on_page_links a {
   margin-top: 25px;
   text-shadow: .5px 1px black;
 }
-
 
 div .on_page_links a:hover {
   color: #e3b719;
@@ -322,17 +321,23 @@ img.profile_photos {
 }
 
 div.port_photo_holder{
-    text-align: center;
+  text-align: center;
 	padding-left: 15px;
 	padding-right: 15px;
-    margin-top: 25px;
+  margin-top: 25px;
+}
+
+div.port_photo_holder_no_top_margin{
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 div.port_photo_holder_left{
-    text-align: left;
+  text-align: left;
 	padding-left: 15px;
 	padding-right: 15px;
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 img.port_photos {
@@ -340,6 +345,10 @@ img.port_photos {
 	border: 2px solid black; 
 	max-width: 100%;
 	margin-top: 10px;
+}
+
+img.port_photos_no_outline {
+	max-width: 100%;
 }
 
     /*********************** Photo Gallery **********************/
