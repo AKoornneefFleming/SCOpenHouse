@@ -93,6 +93,26 @@ h3 {
   text-shadow: 1px 1px rgb(72, 72, 72);
 }
 
+/* upsized text middle*/
+.p4 {
+  color: white;
+  text-align: center;
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  /* font-style: italic; */
+  text-shadow: 1px 1px rgb(72, 72, 72);
+  font-size: 18px
+}
+
+/* upsized text left*/
+.p5 {
+  color: white;
+  text-align: justify;
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  /* font-style: italic; */
+  text-shadow: 1px 1px rgb(72, 72, 72);
+  font-size: 18px
+}
+
 
 /*********************** Bullet Points **********************/
 ul {
@@ -112,6 +132,16 @@ ul {
   li.a {
     margin: 5px 0 0 4em;
     padding: 0;
+  }
+
+  li.upsized {
+    margin: 5px 0 0 4em;
+    padding: 0;
+    color: white;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    /* font-style: italic; */
+    text-shadow: 1px 1px rgb(72, 72, 72);
+    font-size: 18px
   }
 /***********************Main div containers **********************/
 
@@ -151,6 +181,7 @@ div.spaced_text {
 	padding-right: 15px;
     margin-top: 60px;
 }
+
 
 
 
