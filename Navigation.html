@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Solution</title>
+    <link href="Web8.css" rel="stylesheet">  
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-lt-pro" rel="stylesheet">
+    <script src = "Web8.js"></script>
+</head>
+<body onload="showSlides(1)"> 
+<!-- NAVBAR -->
+<!-- Inspired by W3 schools -->
+<div id = "navbar">  
+    <a href="index.html">Home</a> 
+    <a href = "./TeamProfile.html">Team</a>
+    <a class = "active" href = "./DataCollection.html">Data Collection</a>
+    <a href = "./FGDB.html">FGDB</a>
+    <a href = "./Basemaps.html">Basemaps</a>
+    <a href = "./StoryMaps.html">StoryMaps</a>
+    <a href = "./Navigation.html">Navigation</a>
+    <a href = "./AssetManagement.html">Asset Management</a>
+    <a href = "./InstructionPackages.html">Instructions</a>
+    <a href = "./PhotoGallery.html">Trip Gallery</a>
+</div>
+
+<!-- HEADER -->
+<header class="fix_to_top_header">
+    <h1 class = "h1_header">Safari Consulting</h1>
+    <h2 class = "h2_header">Open House Presentation</h2>  
+</header>
+
+<!-- ########### Body of the page starts here ###########-->
+<div class = "container">
+    <!-- Body of the page starts here  -->
+    <div class = "box">
+        
+        <!-- ########### PAGE INTRODUCTION ################ -->
+        <div class = "titles">
+            <h1>Navigation Solutions</h1>
+            <!-- <h2>Subtitle Here if applicable</h2> -->
+         </div>
+
+            <!-- Title Picture -->
+            <div class = "port_photo_holder_no_top_margin">
+                <img class = "port_photos_no_outline" src="./Images/Navigation_EBhome.png" alt="A desktop screnshot of webpage navigation solution" style="width:200px; height:auto">
+            </div> 
+
+        <!-- ########## OVERVIEW ################ -->
+        <div class = "titles">
+            <h2>Overview</h2>
+        </div> 
+
+            <div class = "text">
+                <h3>Priority: </h3>
+                <p class = "p1"> Required </p>
+                <h3>Objectives: </h3>
+                <p class = "p1"> Support Operations and EM, Promote SAWC using GIS, Campus Navigation, Online/Offline Data Accessibility </p>
+                <h3>Academic Requirements: </h3> 
+                <p class = "p1"> Data acquisition, database design</p>
+                <h3>Additional Details: </h3> 
+                <p class = "p1"> An efficient strategy for on-site data collection was imperative to the success of 
+                    the collaborative project, as every deliverable is dependent on the availability of quality spatial data. </p>
+            </div>
+
+        <!-- ########## METHODOLOGY ################ -->
+        <div class = "titles">
+            <h2>Methodology</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">To maximize time and effort on location, the team created feature classes for data collection, 
+                    hosted as ArcGIS web maps (web map) in AGOL and accessed through ArcGIS Field Maps (Field Maps). 
+                    Domains, Field Map surveys, and offline map extents were created to help streamline collection while in the field, 
+                    even during the frequent power outages and loss of network service. In some cases, existing spatial data provided 
+                    by the client while Safari Consulting was on-site was also added to the web map, for in-field verification (e.g. fire extinguishers, buildings and rooms).
+                </p>
+            </div>
+
+            <!-- Schema Picture -->
+            <div class = "port_photo_holder">
+                <img class = "port_photos_no_outline" src="./Images/DataCollection_Schema1.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:700px; height:auto">
+            </div> 
+
+            <div class = "text">
+                <p class = "p3">ArcGIS Pro Feature Class attribute table, domain and fields table.</p>
+            </div>
+
+            <div class = "text">
+                <p class = "p1">A second component to data acquisitions was the organization and review 
+                    of the existing spatial data, which was provided by the client upon our on-site arrival. Data existed in a  myriad of locations and formats.
+                    The scope and types of available raw data needed to be interpreted and understood before it could be cleaned and incorporated into the rest of the project deliverables.
+                </p>
+            </div>
+
+
+
+        <!-- ########## RESULTS ################ -->
+        <div class = "titles">
+            <h2>Results</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">The use of offline web maps in Field Maps, with the generic data collection layers and applicable provided spatial data 
+                    included, helped the team collect new records and verify existing records across the 83-acre campus 
+                    Some in-field collection took place with members of the SAWC staff to locate and contextualize points of interest, and to 
+                    better understand the use-case for data. Sufficient spatial data was gathered from the client and cleaned to support the remaining deliverables.
+                </p>
+            </div>
+
+            <!-- Data Collection Results Photo -->
+            <div class = "port_photo_holder">
+                <img class = "port_photos_no_outline" src="./Images/dataCollection_combined1.png" alt="A Phone and a map showing various collected waypoints" style="width:600px; height:auto">
+            </div> 
+            <div class = "text">
+                <p class = "p3">Various points of data collected across the campus using ArcGIS Field Maps, displayed overtop Esri's standard imagery basemap.</p>
+            </div>
+                  
+    </div>
+</div>
+</div>
+</body>
+</html>
