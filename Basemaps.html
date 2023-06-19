@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Consulting Open House - Home</title>
+    <link href="Web8.css" rel="stylesheet">  
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-lt-pro" rel="stylesheet">
+    <script src = "Web8.js"></script>
+</head>
+<body onload="showSlides(1)"> 
+<!-- NAVBAR -->
+<!-- Inspired by W3 schools -->
+<div id = "navbar">  
+    <a href="index.html">Home</a> 
+    <a href = "./TeamProfile.html">Team</a>
+    <a href = "./DataCollection.html">Data Collection</a>
+    <a href = "./FGDB.html">FGDB</a>
+    <a href = "active" href = "./Basemaps.html">Basemaps</a>
+    <a href = "./StoryMaps.html">StoryMaps</a>
+    <a href = "./Navigation.html">Navigation</a>
+    <a class = "./AssetManagement.html">Asset Management</a>
+    <a href = "./InstructionPackages.html">Instructions</a>
+    <a href = "./PhotoGallery.html">Trip Gallery</a>
+</div>
+
+<!-- HEADER -->
+<header class="fix_to_top_header">
+    <h1 class = "h1_header">Safari Consulting</h1>
+    <h2 class = "h2_header">Open House Presentation</h2>  
+</header>
+
+<!-- ########### Body of the page starts here ###########-->
+<div class = "container">
+    <!-- Body of the page starts here  -->
+    <div class = "box">
+        
+        <!-- ########### PAGE INTRODUCTION ################ -->
+        <div class = "titles">
+            <h1>Custom Basemaps</h1>
+            <!-- <h2>Subtitle Here if applicable</h2> -->
+         </div>
+
+            <!-- Title Picture -->
+            <div class = "port_photo_holder_no_top_margin">
+                <img class = "port_photos_no_outline" src="./Images/Basemaps.png" alt="Screenshot of basemaps" style="width: 400px; height:auto">
+            </div> 
+
+        <!-- ########## OVERVIEW ################ -->
+        <div class = "titles">
+            <h2>Overview</h2>
+        </div> 
+
+            <div class = "text">
+                <h3>Priority: </h3>
+                <p class = "p1"> Required </p>
+                <h3>Objectives: </h3>
+                <p class = "p1"> Promote SAWC using GIS, Campus Navigation</p>
+                <h3>Academic Requirements: </h3> 
+                <p class = "p1"> Cartographic presentation, Data acquisition</p>
+                <h3>Additional Details: </h3> 
+                <p class = "p1"> Multiple customized basemaps were made to provide students, staff, and visitors a reference to locate themselves and navigate around campus. Different versions were created to suite the different deliverables of the project. First, we created a basemap for the general public, which hid certain areas of the campus that are only accessible by SAWC staff. Second, we created a basemap for SAWC staff which included all areas of the campus and the surrounding area. Finally, two sub-versions of the public basemap were designed specifically for the different navigation and asset management solutions to account for the different operational layers and labelling used in those web maps. For example, in the paper version of the basemap, the staff zones were symbolized to de-emphasize the areas off limits to the general public. However, in the navigation application, these zones were left unimpeded.</p>
+             </div>
+
+        <!-- ########## METHODOLOGY FGDB ################ -->
+        <div class = "titles">
+            <h2>Methodology - Custom Basemap</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1"> Once all the data was collected and cleaned and the file geodatabases were created, we started to design the basemaps. In the planning phase of the project, we determined which layers would be static in the basemap versus operational, which was finalized in the first week of the project implementation. These included all reference layers to help visitors orient themselves within the campus, such as roads, buildings, fences, parking lots, and other distinguishable features like the soccer field, garden, and swimming pool.
+                </p>
+
+                <p class = "p1"> The next step involved adding the base layers to a map frame and designing the symbology and colour scheme, following cartographic conventions. 
+                </p>
+ 
+                <p class = "p1"> In the properties of the map frame, we included the map title, description, summary, and tags. These were important to set in the map frame, before converting to a basemap, as they would transfer over to the basemap once converted. This helped save from rewriting the information in the basemap if it was deleted and re-created from the map frame. The final step was to convert the map frame to a basemap. Once the map was converted to a basemap, it became available under the general list of available basemaps for that project.
+                     
+                </p>
+
+                    <!-- First step in Basemap creation -->
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos_no_outline" src="./Images/Basemap_step1.png" alt="First step in basemap creation" style="width:600px; height: auto">
+                    </div> 
+
+                    <div class = "text">
+                        <p class = "p3">Adding the reference layers to a map frame.</p>
+                    </div>
+
+
+                <!-- Second and third steps in Basemap creation -->
+                <div class = "port_photo_holder">
+                    <img class = "port_photos_no_outline" src="./Images/Basemap_step2_3.png" alt="Second and third steps in basemap creation" style="width:600px; height: auto">
+                </div> 
+
+                <div class = "text">
+                    <p class = "p3">Setting the title, description, summary, and project tags.</p>
+                </div>
+
+
+                <!-- Fourth and fifth steps in Basemap creation -->
+                <div class = "port_photo_holder">
+                    <img class = "port_photos_no_outline" src="./Images/Basemap_step4_5.png" alt="Fourth and fifth steps in basemap creation" style="width:600px; height: auto">
+                </div> 
+
+                <div class = "text">
+                    <p class = "p3">Converting the map frame to a tiled basemap.</p>
+                </div>
+                
+
+            </div>
+
+         <!-- ########## Uploading the basemap to AGOL ################ -->
+         <div class = "titles">
+            <h2>Uploading the Basemap to ArcGIS Online </h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">To use the basemap in web maps and applications, it was necessary to share it to the AGOL environment. The layer type that worked best, in terms of tiling and storage, was to share as a vector tile layer with the Feature option selected. This allowed the basemap to be shared as a vector tile layer, with an additional feature layer package shared to AGOL. Therefore, the vector tile layer acted as a standard tile basemap and the feature layer package housed all the layers present in that basemap. In the configuration tab of the Sharing As Web Layer, the tiling scheme was set, sync was enabled, and allowing clients to export cache tiles was enabled. 
+                </p>
+ 
+                    <!-- Uploading to AGOL -->
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos" src="./Images/Basemap_upload_step1_2.png" alt="Uploading basemap to AGOL, steps 1 and 2" style="width:800px; height: auto">
+                    </div> 
+
+                    <div class = "text">
+                        <p class = "p3">Publishing the Basemap as a Web Layer to AGOL.</p>
+                    </div>
+
+
+                 <!-- Applying Settings for the Basemap Upload -->
+                <div class = "port_photo_holder">
+                    <img class = "port_photos" src="./Images/Basemap_upload_step3.png" alt="Configuring the basemap for upload to AGOL" style="width:800px; height:auto">
+                </div> 
+
+                <div class = "text">
+                    <p class = "p3">Configuring the Basemap for upload and publishing as a Vector Tile Layer.</p>
+                </div>
+
+
+                <p class = "p1"> Finally, the custom basemaps can then be used, just like the standard ESRI basemaps, by accessing them under the Basemaps tab and adding to a project.
+
+                </p>
+
+                <!-- Accessing the Basemap -->
+                <div class = "port_photo_holder">
+                    <img class = "port_photos" src="./Images/Basemap_accessing.png" alt="Accessing the basemap in AGOL" style="width:800px; height:auto">
+                </div> 
+
+                <div class = "text">
+                    <p class = "p3">Accessing the basemap in the list of basemaps available.</p>
+                </div>
+            </div>
+
+        <!-- ########## RESULTS ################ -->
+        <div class = "titles">
+            <h2>Results</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">Displayed below are the results of all the custom basemaps created. The first version is for public viewing and the second version is for staff only. The staff version does not hide any part of the campus and it includes a larger extent around the main campus, so the three research zones are visible. This is useful as staff can use the basemap as reference when they are in the areas outside of the campus. Furthermore, different variations of the public basemap were created for specific application deliverables, such as the navigation solution, asset management solution, and critical infrastructure solution to account for the symbology and labelling of specific operational layers. A list of all basemap versions can be found here, in the Basemap folder created in SAWC’s AGOL account.
+                </p>
+            </div>
+
+
+        <!-- PHOTO GALLERY SECTION -->
+        <!-- Heavily leverages w3 code sample, with modifications -AK  -->
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow  -->
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                        <div class = "port_photo_holder">
+                            <img class = "port_photos_no_outline" src="Images/Public_Basemap.jpg" alt="Public Basemap" style="width:800px; height: 500px">
+                        </div>
+                </div>
+
+                <div class="mySlides fade">
+                        <div class = "port_photo_holder">
+                            <img class = "port_photos_no_outline" src="Images/Staff_Basemap.jpg" alt="Staff Basemap" style="width:800px; height: 500px">
+                        </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos_no_outline" src="Images/Staff_Basemap_smallScale.jpg" alt="Staff Basemap (Small Scale)" style="width:800px; height: 500px">
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br> 
+            <div style="text-align:center">
+                <span class="gallery_dot" onclick="currentSlide(1)"></span> 
+                <span class="gallery_dot" onclick="currentSlide(2)"></span> 
+            </div>
+            <div class = "text">
+                <p class = "p3">Public and Staff Basemaps</p>
+            </div>
+                  
+    </div>
+</div>
+</div>
+</body>
+</html>
