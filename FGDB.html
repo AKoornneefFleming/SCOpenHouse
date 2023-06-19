@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Consulting Open House - Home</title>
+    <link href="Web8.css" rel="stylesheet">  
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-lt-pro" rel="stylesheet">
+    <script src = "Web8.js"></script>
+</head>
+<body onload="showSlides(1)"> 
+<!-- NAVBAR -->
+<!-- Inspired by W3 schools -->
+<div id = "navbar">  
+    <a href="index.html">Home</a> 
+    <a href = "./TeamProfile.html">Team</a>
+    <a href = "./DataCollection.html">Data Collection</a>
+    <a href = "active" href = "./FGDB.html">FGDB</a>
+    <a href = "./Basemaps.html">Basemaps</a>
+    <a href = "./StoryMaps.html">StoryMaps</a>
+    <a href = "./Navigation.html">Navigation</a>
+    <a class = "./AssetManagement.html">Asset Management</a>
+    <a href = "./InstructionPackages.html">Instructions</a>
+    <a href = "./PhotoGallery.html">Trip Gallery</a>
+</div>
+
+<!-- HEADER -->
+<header class="fix_to_top_header">
+    <h1 class = "h1_header">Safari Consulting</h1>
+    <h2 class = "h2_header">Open House Presentation</h2>  
+</header>
+
+<!-- ########### Body of the page starts here ###########-->
+<div class = "container">
+    <!-- Body of the page starts here  -->
+    <div class = "box">
+        
+        <!-- ########### PAGE INTRODUCTION ################ -->
+        <div class = "titles">
+            <h1>File Geodatabase</h1>
+            <!-- <h2>Subtitle Here if applicable</h2> -->
+         </div>
+
+            <!-- Title Picture -->
+            <div class = "port_photo_holder_no_top_margin">
+                <img class = "port_photos_no_outline" src="./Images/SAWC_Library.png" alt="Screenshot of our FGDB Library" style="width:200px; height:auto">
+            </div> 
+
+        <!-- ########## OVERVIEW ################ -->
+        <div class = "titles">
+            <h2>Overview</h2>
+        </div> 
+
+            <div class = "text">
+                <h3>Priority: </h3>
+                <p class = "p1"> Required </p>
+                <h3>Objectives: </h3>
+                <p class = "p1"> Support Operations and EM, Online/Offline Data Accessibility</p>
+                <h3>Academic Requirements: </h3> 
+                <p class = "p1"> Data acquisition, Database design</p>
+                <h3>Additional Details: </h3> 
+                <p class = "p1"> One of the solutions that Safari Consulting has delivered is a file geodatabase library (SAWC FGDB Library) to house all layers of the project and facilitate good database management practices. We originally designed this approach to be flexible to help adapt to changes in the database design and structure throughout the project. The other benefit of separating data into specific and intuitive locations was to reduce the likelihood of data being duplicated in the future. </p>
+             </div>
+
+        <!-- ########## METHODOLOGY FGDB ################ -->
+        <div class = "titles">
+            <h2>Methodology - File Geodatabase</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">Before collecting any data on-site, the team sat down with the client and reviewed the data which already existed, finalized the list of data to be collected, and determined exactly what attributes were to be included per layer. We maximized our time at SAWC by building the geodatabase with empty layers before arriving on-site (see Deliverable 1).
+                </p>
+
+                <p class = "p1">All the data collected on-site was then cleaned up and transferred to its appropriate file geodatabase in the SAWC FGDB library, created by Safari Consulting. After reviewing all the data and discussing further the needs of the client, we decided the best approach was to create two separate file geodatabases. The first was to hold all the data that was intended for public viewing. The second was to hold all the sensitive data, which should only be accessed by members of SAWC.
+                </p>
+ 
+                <p class = "p1"> After cleaning and organizing all the data into the proper file geodatabases, we further organized the data into feature datasets, where it was applicable. For example, in the staff file geodatabase all the critical infrastructure and life safety data were placed in their own feature datasets. We also applied best practices for naming conventions for all the layers within the file geodatabases as well as field names within each layer. We did this by excluding spaces, periods, or special characters in the names, and not starting any name with a number. Additionally, we kept the names singular instead of plural i.e., “Road” instead of “Roads” and changed all the layer and field aliases which allowed for a cleaner display in the legends and pop-ups. For example, we would name layers to be intuitive to the data, such as “CI_SewageSepticTank”, whereas the alias would simply display the layer as “Septic Tank”. Furthermore, we set field lengths to ensure the most efficient storage possible. 
+                </p>
+
+                    <!-- First steps in FGDB -->
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos" src="./Images/FGDB_step1.png" alt="First steps in FGDB" style="width:600px; height:auto">
+                    </div> 
+
+                    <div class = "text">
+                        <p class = "p3">The first steps in standardizing the FGDB.</p>
+                    </div>
+
+                <p class = "p1">Finally, we created relationship classes between layers (such as between buildings and rooms), created domains and made sure to assign the domains to the proper fields.                   
+                </p>
+
+                <!-- Second steps in FGDB -->
+                <div class = "port_photo_holder">
+                    <img class = "port_photos" src="./Images/FGDB_step2.png" alt="Second steps in FGDB" style="width:600px; height:auto">
+                </div> 
+
+                <div class = "text">
+                    <p class = "p3">Setting domains.</p>
+                </div>
+                
+
+            </div>
+
+         <!-- ########## Uploading layers to AGOL ################ -->
+         <div class = "titles">
+            <h2>Uploading Layers from the FGDB to ArcGIS Online </h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">These feature class layers were uploaded to AGOL and hosted as feature layers. These layers were then used to create web maps within AGOL and those maps were used in applications such as ArcGIS Field Maps and Experience Builder. 
+                </p>
+ 
+                    <!-- Uploading to AGOL -->
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos" src="./Images/FGDB_layerUpload.png" alt="Uploading layers to AGOL" style="width:800px; height:auto">
+                    </div> 
+
+                    <div class = "text">
+                        <p class = "p3">Uploading a layer to AGOL.</p>
+                    </div>
+
+                <p class = "p1">Once these feature layers were shared to AGOL, we were able to overwrite them to push through any updates. Uploading features to AGOL from ArcGIS Pro allowed us to customize the symbology within ArcGIS Pro, which was maintained in the layers once uploaded. This was very useful as when changes were made to the data and we needed to re-upload or overwrite layers, we did not have to re-do any symbology as it was carried forward to AGOL.             
+                </p>
+
+                 <!-- Overwriting to AGOL -->
+                <div class = "port_photo_holder">
+                    <img class = "port_photos_no_outline" src="./Images/FGDB_layerOverwrite.png" alt="Overwriting a layer to AGOL" style="width:800px; height:auto">
+                </div> 
+
+                <div class = "text">
+                    <p class = "p3">Overwriting layers to AGOL.</p>
+                </div>
+            </div>
+
+        <!-- ########## RESULTS ################ -->
+        <div class = "titles">
+            <h2>Results</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">The final result of our file geodatabase deliverable were two separate file geodatabases. We have also included a file geodatabase that was given to us by the client that holds general data about Africa, such as administrative boundaries. All three of these file geodatabases have been placed in their own library folder, which we have called “SAWC_FGDB_Library”.
+                </p>
+            </div>
+
+
+        <!-- PHOTO GALLERY SECTION -->
+        <!-- Heavily leverages w3 code sample, with modifications -AK  -->
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow  -->
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                        <div class = "port_photo_holder">
+                            <img class = "port_photos_no_outline" src="Images/FGDB_Results1.png" alt="Public FGDB" style="width:800px">
+                        </div>
+                </div>
+
+                <div class="mySlides fade">
+                        <div class = "port_photo_holder">
+                            <img class = "port_photos_no_outline" src="Images/FGDB_Results2.png" alt="Staff FGDB" style="width:800px">
+                        </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br> 
+            <div style="text-align:center">
+                <span class="gallery_dot" onclick="currentSlide(1)"></span> 
+                <span class="gallery_dot" onclick="currentSlide(2)"></span> 
+            </div>
+            <div class = "text">
+                <p class = "p3">Public and Staff File Geodatabases</p>
+            </div>
+                  
+    </div>
+</div>
+</div>
+</body>
+</html>
