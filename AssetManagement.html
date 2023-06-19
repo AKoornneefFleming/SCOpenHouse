@@ -92,7 +92,7 @@
 
                     <!-- Feature Dataset Picture -->
                     <div class = "port_photo_holder">
-                        <img class = "port_photos" src="./Images/LS_FeatureDataset.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:200px; height:auto">
+                        <img class = "port_photos" src="./Images/LS_FeatureDataset.png" alt="An ArcGIS Pro Feature Dataset containing life safety data" style="width:200px; height:auto">
                     </div> 
 
                 <p class = "p1">Once the organization of the Life Safety feature dataset was complete, the feature classes were exported to SAWC’s 
@@ -102,9 +102,9 @@
                     created for the life safety equipment based on the corresponding data’s schema, and an offline map extent was generated.                    
                 </p>
 
-                <!-- Feature Dataset Picture -->
+                <!-- AGOL Configuring Picture -->
                 <div class = "port_photo_holder">
-                    <img class = "port_photos" src="./Images/Fire_Inspection_Form_800px.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:800px; height:auto">
+                    <img class = "port_photos" src="./Images/Fire_Inspection_Form_800px.png" alt="Configuring a webmap in AGOL" style="width:800px; height:auto">
                 </div> 
             </div>
 
@@ -134,7 +134,7 @@
 
                     <!-- Critical Infrastructure (CI) Dataset Picture -->
                     <div class = "port_photo_holder">
-                        <img class = "port_photos" src="./Images/CI_FeatureDataset.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:181px; height:auto">
+                        <img class = "port_photos" src="./Images/CI_FeatureDataset.png" alt="An ArcGIS Pro Feature Dataset holding critical infrastructure data" style="width:181px; height:auto">
                     </div> 
 
                 <p class = "p1">The critical infrastructure was exported to AGOL as hosted feature layers and included in a web map 
@@ -144,9 +144,9 @@
                     The name, type, and subcategory fields, in addition to campus rooms and building rooms, were made searchable in the web map for use in the field.             
                 </p>
 
-                <!-- Feature Dataset Picture -->
+                 <!-- Critical Infrastructure (CI) AGOL Setup -->
                 <div class = "port_photo_holder">
-                    <img class = "port_photos_no_outline" src="./Images/CI_Screenshots_1.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:800px; height:auto">
+                    <img class = "port_photos_no_outline" src="./Images/CI_Screenshots_1.png" alt="Screenshots of using Field Maps Designer to prepare a webmap" style="width:800px; height:auto">
                 </div> 
             </div>
 
@@ -156,19 +156,43 @@
         </div> 
 
             <div class = "text">
-                <p class = "p1">The use of offline web maps in Field Maps, with the generic data collection layers and applicable provided spatial data 
-                    included, helped the team collect new records and verify existing records across the 83-acre campus 
-                    Some in-field collection took place with members of the SAWC staff to locate and contextualize points of interest, and to 
-                    better understand the use-case for data. Sufficient spatial data was gathered from the client and cleaned to support the remaining deliverables.
+                <p class = "p1">Two digital solutions were produced in Fields Maps for online and offline use by SAWC’s operations staff. 
+                    The ‘Operations: Fire Inspection Map’ and the ‘Operations: Critical Infrastructure Maintenance Map’ are configured and hosted in 
+                    Field Maps and ready for use by SAWC staff. Both solutions allow for rapid dissemination of observations between field technicians 
+                    in the field, and leadership in office that need to coordinate and make decisions with the available information. 
+                    All the available and applicable data can be found in an organized environment, with pre-defined symbology, and a 
+                    customized basemap. Both the web maps are available for online and offline viewing on field technicians’ mobile devices, 
+                    within AGOL, or in ArcGIS Pro, through use of the organization’s AGOL portal. 
                 </p>
             </div>
 
-            <!-- Data Collection Results Photo -->
-            <div class = "port_photo_holder">
-                <img class = "port_photos_no_outline" src="./Images/dataCollection_combined1.png" alt="A Phone and a map showing various collected waypoints" style="width:600px; height:auto">
-            </div> 
-            <div class = "text">
-                <p class = "p3">Various points of data collected across the campus using ArcGIS Field Maps, displayed overtop Esri's standard imagery basemap.</p>
+
+        <!-- PHOTO GALLERY SECTION -->
+        <!-- Heavily leverages w3 code sample, with modifications -AK  -->
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow  -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                        <div class = "port_photo_holder">
+                            <img class = "port_photos_no_outline" src="Images/Fire_Inspection_FieldMaps_1.png" alt="Various field map screenshots showcasing
+                            fire quipment inspection solution" style="width:800px">
+                        </div>
+                    <!-- <div class="gallery_text">Safari Consulting on a game drive</div> -->
+                </div>
+                <div class="mySlides fade">
+                        <div class = "port_photo_holder">
+                            <img class = "port_photos_no_outline" src="Images/CI_Results_1.png" alt="A webmap, phone sreenshots, and AGOL screenshots showcasing 
+                            the Critical Infrastructure Asset Management Solution" style="width:800px">
+                        </div>
+                    <!-- <div class="gallery_text">Safari Consulting with our SAWC project liasion</div> -->
+                    </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br> 
+            <div style="text-align:center">
+                <span class="gallery_dot" onclick="currentSlide(1)"></span> 
+                <span class="gallery_dot" onclick="currentSlide(2)"></span> 
             </div>
                   
     </div>
