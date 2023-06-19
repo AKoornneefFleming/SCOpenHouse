@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Consulting Open House - Home</title>
+    <link href="Web8.css" rel="stylesheet">  
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-lt-pro" rel="stylesheet">
+    <script src = "Web8.js"></script>
+</head>
+<body onload="showSlides(1)"> 
+<!-- NAVBAR -->
+<!-- Inspired by W3 schools -->
+<div id = "navbar">  
+    <a href="index.html">Home</a> 
+    <a href = "./TeamProfile.html">Team</a>
+    <a href = "./DataCollection.html">Data Collection</a>
+    <a href = "./FGDB.html">FGDB</a>
+    <a href = "./Basemaps.html">Basemaps</a>
+    <a href = "./StoryMaps.html">StoryMaps</a>
+    <a href = "./Navigation.html">Navigation</a>
+    <a class = "active" href = "./AssetManagement.html">Asset Management</a>
+    <a href = "./InstructionPackages.html">Instructions</a>
+    <a href = "./PhotoGallery.html">Trip Gallery</a>
+</div>
+
+<!-- HEADER -->
+<header class="fix_to_top_header">
+    <h1 class = "h1_header">Safari Consulting</h1>
+    <h2 class = "h2_header">Open House Presentation</h2>  
+</header>
+
+<!-- ########### Body of the page starts here ###########-->
+<div class = "container">
+    <!-- Body of the page starts here  -->
+    <div class = "box">
+        
+        <!-- ########### PAGE INTRODUCTION ################ -->
+        <div class = "titles">
+            <h1>Asset Management</h1>
+            <!-- <h2>Subtitle Here if applicable</h2> -->
+         </div>
+
+            <!-- Title Picture -->
+            <div class = "port_photo_holder_no_top_margin">
+                <img class = "port_photos_no_outline" src="./Images/Asset_Management_mini1.png" alt="A phone screnshot using the Field Maps app to 
+                inspect fire extinguisher equipment" style="width:200px; height:auto">
+            </div> 
+
+        <!-- ########## OVERVIEW ################ -->
+        <div class = "titles">
+            <h2>Overview</h2>
+        </div> 
+
+            <div class = "text">
+                <h3>Priority: </h3>
+                <p class = "p1"> Required </p>
+                <h3>Objectives: </h3>
+                <p class = "p1"> Support Operations and EM, Online/Offline Data Accessibility</p>
+                <h3>Academic Requirements: </h3> 
+                <p class = "p1"> Enterprise technology, data acquisition, database design</p>
+                <h3>Additional Details: </h3> 
+                <p class = "p1"> SAWC’s Operations team was interested in standardizing the use of spatial data in the management of their 
+                    critical assets and life safety equipment, with offline capabilities. This would support ongoing monitoring, maintenance, 
+                    and inspections; better enabling operations, emergency management, business continuity planning, as well as future research projects. </p>
+             </div>
+
+        <!-- ########## METHODOLOGY LIFE SAFETY ################ -->
+        <div class = "titles">
+            <h2>Methodology - Life Safety Equipment</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">Life safety equipment is inspected every year at SAWC, with over 200 unique pieces of equipment spread across the campus. 
+                    Inspections are conducted with paper logs, unaided by spatial data, and the ability to effectively complete inspections 
+                    in a timely manner is largely dependent on staff's knowledge and memory. 
+                </p>
+
+                <p class = "p1">Field technicians guided the Safari Consulting team across the campus, 
+                    identifying the location of fire horns, whose location was captured using the Field Maps. It was not possible to collect the data for all
+                    fire equipment, but Safari Consulting conducted random spot checks for other equipment types, as time allowed. This gave us a base of data to 
+                    begin building a solution with, with the intention for the client to continue collecting data with the solution we created. 
+                </p>
+ 
+                <p class = "p1">New feature classes were built for each type of fire equipment (extinguishers, hoses, hydrants, and horns). The feature classes 
+                    were designed with a schema that included a field for each question on the inspection forms. 
+                    Domains were created and assigned to simplify collection, and field sizes were customized based on the required length. 
+                    All the feature classes were placed in a feature dataset called Life_Safety, within the Staff FGDB, of the SAWC FGDB Library. 
+                    Also included in the feature dataset were fire breaks and emergency assembly areas.
+                </p>
+
+                    <!-- Feature Dataset Picture -->
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos" src="./Images/LS_FeatureDataset.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:200px; height:auto">
+                    </div> 
+
+                <p class = "p1">Once the organization of the Life Safety feature dataset was complete, the feature classes were exported to SAWC’s 
+                    AGOL account as hosted feature layers, placed in a single web map, against the backdrop of the staff basemap created by the Safari Consulting team. 
+                    Extinguisher, hose, hydrant, and horn symbology was applied to the inspection status field, to distinguish what needed to be placed and/or confirmed. 
+                    Settings for the data were customized to allow for offline mode and for staff editing.The web map was configured within Field Maps Designer, where inspection forms were 
+                    created for the life safety equipment based on the corresponding data’s schema, and an offline map extent was generated.                    
+                </p>
+
+                <!-- Feature Dataset Picture -->
+                <div class = "port_photo_holder">
+                    <img class = "port_photos" src="./Images/Fire_Inspection_Form_800px.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:800px; height:auto">
+                </div> 
+            </div>
+
+         <!-- ########## METHODOLOGY CRITICAL INFRASTRUCTURE (CI) ################ -->
+         <div class = "titles">
+            <h2>Methodology - Critical Infrastructure</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">Critical infrastructure is maintained by SAWC’s operational staff across the campus. 
+                    This includes features such as freshwater pipes and connections, sewage pipes and connections, water tanks, electric kiosks, 
+                    generators, fiber optic cables, etc. The operations team was interested in having this information available in web solutions 
+                    for viewing and maintaining information related to this equipment’s locations. 
+                </p>
+ 
+                <p class = "p1">Operations staff guided Safari Consulting around campus to collect spatial records for data including but 
+                    not limited to transformers, generators, kiosks, and circuit breakers. Other critical infrastructure that already had existing spatial data, was also visited 
+                    with a project liaison, to review and provide contextual information. 
+                </p>
+
+
+                <p class = "p1">There was also a large amount of existing spatial data in various formats (gpx, kml, csv, etc.) and folders. It was imported into GIS to be converted, 
+                    reviewed, and cleaned. Type or subcategory fields were added to allow applicable data 
+                    sets to be merged and the the number of existing files to be simplified. 
+                    Duplicate and overlapping datasets were merged, with conflicts noted for data owner review in the comments field.               
+                </p>
+
+                    <!-- Critical Infrastructure (CI) Dataset Picture -->
+                    <div class = "port_photo_holder">
+                        <img class = "port_photos" src="./Images/CI_FeatureDataset.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:181px; height:auto">
+                    </div> 
+
+                <p class = "p1">The critical infrastructure was exported to AGOL as hosted feature layers and included in a web map 
+                    and configured for online and offline use in Field Maps. A key distinction in this approach was the use of intermediary ‘Field Update’ layers, 
+                    instead of making the source critical infrastructure data editable. The use of these separate layers allows the data owner to review field observations, 
+                    perform quality assurance and quality control (QAQC), and determine the appropriate updates to the SAWC File Geodatabase and SAWC AGOL account. 
+                    The name, type, and subcategory fields, in addition to campus rooms and building rooms, were made searchable in the web map for use in the field.             
+                </p>
+
+                <!-- Feature Dataset Picture -->
+                <div class = "port_photo_holder">
+                    <img class = "port_photos_no_outline" src="./Images/CI_Screenshots_1.png" alt="An ArcGIS Pro Feature Class table, domain, and fields" style="width:800px; height:auto">
+                </div> 
+            </div>
+
+        <!-- ########## RESULTS ################ -->
+        <div class = "titles">
+            <h2>Results</h2>
+        </div> 
+
+            <div class = "text">
+                <p class = "p1">The use of offline web maps in Field Maps, with the generic data collection layers and applicable provided spatial data 
+                    included, helped the team collect new records and verify existing records across the 83-acre campus 
+                    Some in-field collection took place with members of the SAWC staff to locate and contextualize points of interest, and to 
+                    better understand the use-case for data. Sufficient spatial data was gathered from the client and cleaned to support the remaining deliverables.
+                </p>
+            </div>
+
+            <!-- Data Collection Results Photo -->
+            <div class = "port_photo_holder">
+                <img class = "port_photos_no_outline" src="./Images/dataCollection_combined1.png" alt="A Phone and a map showing various collected waypoints" style="width:600px; height:auto">
+            </div> 
+            <div class = "text">
+                <p class = "p3">Various points of data collected across the campus using ArcGIS Field Maps, displayed overtop Esri's standard imagery basemap.</p>
+            </div>
+                  
+    </div>
+</div>
+</div>
+</body>
+</html>
