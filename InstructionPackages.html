@@ -19,9 +19,9 @@
     <a href = "./FGDB.html">FGDB</a>
     <a href = "./Basemaps.html">Basemaps</a>
     <a href = "./StoryMaps.html">StoryMaps</a>
-    <a class = "active" href = "./Navigation.html">Navigation</a>
+    <a href = "./Navigation.html">Navigation</a>
     <a href = "./AssetManagement.html">Asset Management</a>
-    <a href = "./InstructionPackages.html">Instruction Packages</a>
+    <a class = "active" href = "./InstructionPackages.html">Instruction Packages</a>
 </div>
 
 <!-- HEADER -->
@@ -77,15 +77,7 @@
             </div> 
 
             <div class = "text">
-                <p class = "p3">General workflow to create the navigation solutions.</p>
-            </div>
-
-            <div class = "text">
-                <p class = "p1"> For the public-facing solutions, hosted feature layer views were created to display data with sensitive attributes. For example,
-                    Fire Extinguisher data had records outside of the campus and fields describing when the equipment was last serviced, which was information
-                    the public did not need to know. Setting visibility extents and deleting sensitive fields, we were able to make the Fire Extinguisher layer 
-                    appropriate for public consumption.
-                </p>
+                <p class = "p3">General workflow to create the instruction packages.</p>
             </div>
 
 
@@ -96,7 +88,7 @@
         </div> 
 
 
-        <!-- EB -->
+        <!-- general -->
         
             <div class = "text">
                 <h3>General GIS Instruction Package</h3>
@@ -113,128 +105,87 @@
                 <p class = "p3">Screenshots of the ‘General GIS Instruction Package’. This document has numerous tutorials ranging from the basics of creating a file geodatabase, to incorporating 360 images in ArcGIS StoryMaps. </p>
             </div>
 
-            <!--EB Link --> 
+            <!--Gen IP Link --> 
             <div class = "link_holder">
                 <div class = "on_page_linkz">
-                    <a href = "https://experience.arcgis.com/experience/518332597ed9440fa4f23079a8ae0680">Navigation Webpage</a>
+                    <a href = "./Deliverable7/2301_InstructionPck_General.pdf">PDF Document</a>
                 </div>
             </div>
 
-        <!-- FM PUBLIC -->
+        <!-- grids -->
         
          <div class = "text">
-                <h3>Public Online/Offline Application</h3>
-                <p class = "p1">The next solution is a web map configured for use in ArcGIS Field Maps mobile application, for both online and offline use. 
-                    This solution is also intended for members of the public and students of the college. The map displays the student side of the campus as well
-                    as Emergency Assembly Points and Fire Extinguishers. Within the app users can view their location within the college and search for/select 
-                    rooms and buildings by name and number. Users can download an extent of the map for offline use, with all of the same capabilities. 
+                <h3>Custom Referenced Grids</h3>
+                <p class = "p1"> The ‘Creating and Using Custom Reference Grids’ document is relevant to the data owner responsible
+                    for updating the grid system feature classes or corresponding products, covered in the Navigation deliverable, which requires a detailed workflow.
                 </p>
             </div>
 
             <!-- Results Photo -->
             <div class = "port_photo_holder">
-                <img class = "port_photos_no_outline" src="./Images/Nav_FMP.png" alt="Field Maps public navigation solution" style="width:600px; height:auto">
+                <img class = "port_photos_no_outline" src="./Images/IP_GRD.png" alt="Screenshots of the ‘ Creating and Using Custom Reference Grids’ document." style="width:600px; height:auto">
             </div> 
             <div class = "text">
-                <p class = "p3">Mobile application configured with Field Maps for public navigation. </p>
+                <p class = "p3">Screenshots of the ‘Creating and Using Custom Reference Grids’ document.</p>
             </div>
-                 <div class = "port_photo_holder">
-                    <img class = "port_photos_no_outline" src="./Images/FMNav_QR.png.png" alt="QR Code" style="width: 138px; height:auto">
-                </div> 
+            <!--Gen IP Link --> 
+            <div class = "link_holder">
+                <div class = "on_page_linkz">
+                    <a href = "./Deliverable7/2301_InstructionPck_UTMReferencedGrids.pdf">PDF Document</a>
+                </div>
+            </div>
 
-        <!-- BROCHURE -->
+
+        <!-- Field Updates -->
         
          <div class = "text">
-                <h3>Public Offline Printable Brochure</h3>
-                <p class = "p1">The final public solution is a printable brochure, for fully offline and deviceless use. The brochure displays a map of the 
-                    student side of the Main Campus with labelled buildings and classrooms, a map of the Emergency Assembly Points around the Main Campus,
-                    and QR code to access the mobile application solution described above. Both maps were created and exported using ArcGIS Pro layouts. 
+                <h3>Field Surveys and Updates</h3>
+                <p class = "p1">‘Field Surveys with Field Update Layers’ uses the critical infastucture asset mangement solution in a tutorial for GIS Data owner and Field
+                    technicians for managing observations made in field and is also relevant to audiences interested in using Field Maps to conduct field surveys. 
                 </p>
             </div>
 
             <!-- Results Photo -->
             <div class = "port_photo_holder">
-                <img class = "port_photos_no_outline" src="./Images/Nav_B.png" alt="Screenshot of the brochure navigation solution" style="width:600px; height:auto">
+                <img class = "port_photos_no_outline" src="./Images/IP_Field.png" alt="Screenshots of the ‘Field Surveys with Field Update Layers’ document." style="width:600px; height:auto">
             </div> 
             <div class = "text">
-                <p class = "p3">Brochure for public navigation. </p>
+                <p class = "p3">Screenshots of the ‘Field Surveys with Field Update Layers’ document.</p>
             </div>
-                    <!-- Brochure PDF Links --> 
+            <!--Gen IP Link --> 
             <div class = "link_holder">
                 <div class = "on_page_linkz">
-                    <a href = "./Deliverable5/2301_NavBrochure_General.pdf">Main Campus</a>
-                    <a href = "./Deliverable5/2301_NavBrochure_Ranger.pdf">Ranger Camp</a>
+                    <a href = "./Deliverable7/2301_InstructionPck_FieldUpdates.pdf">PDF Document</a>
                 </div>
             </div>
 
 
-        <!-- FM STAFF -->
+
+        <!-- Fire Extinguishers -->
         
          <div class = "text">
-                <h3>SAWC Staff Online/Offline Application</h3>
-                <p class = "p1">This "Staff Only" solution is also a web map configured for use in ArcGIS Field Maps mobile application, for both online and offline use. 
-                    The map displays the entire campus as well as the surrounding reaseach zones and authorized access only roads. Within the app users can view 
-                    their location and search for/select rooms and buildings by name and number. Users have two options for downloading extents for offline use, 
-                    the extent of the campus or the entire extent including the several research zones. 
+                <h3>Field Maps and Fire Extinguisher Inspections</h3>
+                <p class = "p1">The final document ‘Completing Fire Equipment Inspections with Field Maps’ is a specific guide intended 
+                    for operations staff responsible for managing fire equipment inspections, and covers the remaining work required to implement the solution.
                 </p>
             </div>
 
             <!-- Results Photo -->
             <div class = "port_photo_holder">
-                <img class = "port_photos_no_outline" src="./Images/Nav_FMS.png" alt="Mobile screen shots of Field Maps app for staff navigation" style="width:600px; height:auto">
+                <img class = "port_photos_no_outline" src="./Images/IP_Fire.png" alt="Screenshots of the ‘Completing Fire Equipment Inspections with Field Maps’ document." style="width:600px; height:auto">
             </div> 
             <div class = "text">
-                <p class = "p3">Mobile application configured with Field Maps for SAWC staff navigation. </p>
+                <p class = "p3">Screenshots of the ‘Completing Fire Equipment Inspections with Field Maps’ document. </p>
             </div>
 
-        <!-- ########## GRIDS - AK section ################ -->
-        <div class = "titles">
-            <h3>Customized, UTM Referenced Grids</h3>
-        </div> 
-
-            <div class = "text">
-                <p class = "p1">Safari Consulting developed a customized, UTM referenced Grid code covering three park systems of interest, which allows 
-                    for rapid dissemination of location information, without requiring users to interpret coordinate systems. 
-                    The grid was produced in a feature class format, for easy inclusion in various projects. It was featured in 
-                    PDF maps (A3 and A4, UTM projected), created by Safari Consulting, for three separate park systems, as well as the park systems combined. 
-                </p>
-            </div>
-
-            
-            <div class = "port_photo_holder">
-                <img class = "port_photos_no_outline" src="./Images/grids_sample_2.png" alt="Screenshots of maps with UTM grids overlayed with custom alpha numeric grid" style="width:800px; height:auto">
-            </div> 
-
-            <div class = "text">
-                <p class = "p3">Maps (not to scale) including UTM grids overlayed with a custom alpha numeric grid system.</p>
-            </div>
-          
-            <!-- Grid PDF Links --> 
+                    <!--Fire IP Link --> 
             <div class = "link_holder">
                 <div class = "on_page_linkz">
-                    <a href = "./Deliverable5/Kempiana Boundary UTM Grid Layout A4.pdf">Sample PDF 1</a>
-                    <a href = "./Deliverable5/Parks Boundary UTM Grid Layout A4.pdf">Sample PDF 2</a>
+                    <a href = "./Deliverable7/2301_InstructionPck_FireEquipmentInspections.pdf">PDF Document</a>
                 </div>
             </div>
 
 
-            <div class = "text">
-                <p class = "p1"> A second mobile application solution uses Field Maps to feature the customized, UTM referenced grid, for easy coordination of location. 
-                    The parks featured in this extent fall outside the primary study area for the basemap, and is solely for internal use, 
-                    therefore a standard Esri basemap is used 
-                </p>
-
-                <div class = "port_photo_holder">
-                    <img class = "port_photos_no_outline" src="./Images/Parks_FieldMap_Sample1.png" alt="Screenshots of phones displaying grid map in Field Maps" style="width:800px; height:auto">
-                </div> 
-    
-                <div class = "text">
-                    <p class = "p3">Screenshots of phones displaying grid map in Field Maps.</p>
-                </div>
-
-                <div class = "port_photo_holder">
-                    <img class = "port_photos_no_outline" src="./Images/SAWC_NavGrid_QRCode.png" alt="QR Code" style="width: 138px; height:auto">
-                </div> 
 
             </div>
 
